@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오픈소스소프트웨어 - 세상을 바꾸는 협업의 기술</title>
+    <meta name="description" content="글로벌 개발 생태계의 핵심, 오픈소스 소프트웨어의 원리와 협업 방식을 배우는 최고의 과정입니다.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="container fade-in">
+            <h1>오픈소스 소프트웨어</h1>
+            <p>세상을 바꾸는 코드는 혼자가 아닌 '함께' 만들어집니다. <br>글로벌 개발 협업의 중심에서 당신의 가능성을 현실로 만드세요.</p>
+            <a href="#about" class="btn">강의 알아보기</a>
+        </div>
+    </header>
+
+    <!-- Why Section -->
+    <section id="about" class="features">
+        <div class="container">
+            <h2 class="fade-in">왜 오픈소스인가?</h2>
+            <div class="grid">
+                <div class="card fade-in" style="animation-delay: 0.2s;">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>버전 관리의 마스터</h3>
+                    <p>Git과 GitHub를 통해 현대 소프트웨어 개발의 핵심인 버전 관리와 협업 워크플로우를 완벽하게 이해합니다.</p>
+                </div>
+                <div class="card fade-in" style="animation-delay: 0.4s;">
+                    <i class="fas fa-users"></i>
+                    <h3>글로벌 커뮤니티 협업</h3>
+                    <p>전 세계 개발자들과 소통하며 코드를 검토하고, Pull Request를 통해 실제 프로젝트에 기여하는 법을 배웁니다.</p>
+                </div>
+                <div class="card fade-in" style="animation-delay: 0.6s;">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>라이선스와 윤리</h3>
+                    <p>MIT, Apache, GPL 등 다양한 오픈소스 라이선스를 이해하고 지식 공유의 가치와 법적 책임을 배웁니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" style="background-color: rgba(0,0,0,0.2);">
+        <div class="container">
+            <h2 class="fade-in">핵심 커리큘럼</h2>
+            <div class="curriculum-list">
+                <div class="curriculum-item fade-in" style="animation-delay: 0.1s;">
+                    <span>01</span> 오픈소스의 역사와 철학
+                </div>
+                <div class="curriculum-item fade-in" style="animation-delay: 0.2s;">
+                    <span>02</span> 범용 Git & GitHub 심층 마스터
+                </div>
+                <div class="curriculum-item fade-in" style="animation-delay: 0.3s;">
+                    <span>03</span> 오픈소스 라이선스 및 지식재산권
+                </div>
+                <div class="curriculum-item fade-in" style="animation-delay: 0.4s;">
+                    <span>04</span> 대규모 프로젝트 기여(Contribution) 실습
+                </div>
+                <div class="curriculum-item fade-in" style="animation-delay: 0.5s;">
+                    <span>05</span> 지속 가능한 오픈소스 생태계 구축
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" style="text-align: center;">
+        <div class="container">
+            <h2 class="fade-in">지금 바로 시작하세요</h2>
+            <p class="fade-in" style="color: var(--text-muted); margin-bottom: 2rem;">오픈소스의 힘을 빌려 더 큰 개발자로 성장할 준비가 되셨나요?</p>
+            <a href="#" class="btn fade-in">수강 신청하러 가기</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 오픈소스소프트웨어 교육 과정. All Rights Reserved.</p>
+            <p style="margin-top: 1rem; font-size: 0.8rem;">Designed for Future Developers</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Scroll Reveal Effect
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Add visibility class to trigger animations if needed
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
